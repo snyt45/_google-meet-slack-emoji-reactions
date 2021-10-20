@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-  cext:
+  app:
     build: .
     ports:
       - 9090:9090
     volumes:
-      - .:/work
+      - .:/app
     stdin_open: true
     tty: true
     environment:
