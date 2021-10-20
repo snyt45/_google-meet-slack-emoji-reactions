@@ -7,11 +7,7 @@ services:
       - 9090:9090
     volumes:
       - .:/work
-      - node_modules_volume:/work/node_modules
     stdin_open: true
     tty: true
     environment:
       - CHOKIDAR_USEPOLLING=true
-
-volumes:
-  node_modules_volume:
