@@ -1,3 +1,8 @@
 module.exports = {
-  lintOnSave: false
+  lintOnSave: false,
+  pages: {
+    manifest: {
+      entry: 'src/manifest.ts'
+    }
+  }
 }
