@@ -1,0 +1,8 @@
+export const getManifest = () => {
+  return {
+    manifest_version: 3,
+    name: "Getting Started Example",
+    description: "Build an Extension!",
+    version: "1.0"
+  }
+}
