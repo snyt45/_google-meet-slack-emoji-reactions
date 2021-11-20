@@ -19,9 +19,6 @@ npm install
 # 開発用にコンパイルしてホットリロードする
 npm run serve
 
-# 本番用のファイル生成
-npm run build
-
-# Lint実行
-npm run lint
+# GoogleChrome拡張機能用のファイル生成
+npm run build:prepare
 ```
