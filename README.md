@@ -20,5 +20,5 @@ npm install
 npm run serve
 
 # GoogleChrome拡張機能用のファイル生成
-npm run build:prepare
+npm run build
 ```
