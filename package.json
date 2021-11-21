@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "build": "run-s clear build:prepare build:js",
     "build:prepare": "esno scripts/prepare.ts",
     "build:js": "esbuild src/contentScripts/index.ts --minify --outfile=extension/dist/contentScripts/index.global.js",
     "clear": "rimraf extension/dist extension/manifest.json"
