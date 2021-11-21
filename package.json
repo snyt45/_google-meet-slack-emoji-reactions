@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build:prepare": "npx esno scripts/prepare.ts"
+    "build:prepare": "npx esno scripts/prepare.ts",
+    "build:js": "npx esbuild src/contentScripts/index.ts --minify --outfile=extension/dist/contentScripts/index.global.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

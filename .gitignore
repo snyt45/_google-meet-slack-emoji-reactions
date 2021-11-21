@@ -23,3 +23,4 @@ pnpm-debug.log*
 *.sw?
 
 extension/manifest.json
+extension/dist
