@@ -7,7 +7,7 @@
     "lint": "vue-cli-service lint",
     "build": "run-s clear build:prepare build:js",
     "build:prepare": "esno scripts/prepare.ts",
-    "build:js": "esbuild src/contentScripts/index.ts --bundle --minify --outfile=extension/dist/contentScripts/index.global.js",
+    "build:js": "node ./esbuild.config.js",
     "clear": "rimraf extension/dist extension/manifest.json"
   },
   "dependencies": {
