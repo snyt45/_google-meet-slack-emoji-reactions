@@ -11,7 +11,7 @@ export const getManifest = () => {
       },
     ],
     action: {
-      'default_popup': './dist/popup/index.html'
+      default_popup: './dist/popup/index.html'
     },
   }
 }
