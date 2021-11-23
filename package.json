@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "build": "run-s clear build:prepare build:js",
+    "build": "run-s clear build:web build:prepare build:js",
     "build:prepare": "esno scripts/prepare.ts",
     "build:js": "node ./esbuild.config.js",
     "build:web": "vite build",
