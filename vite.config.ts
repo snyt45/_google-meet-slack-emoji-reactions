@@ -14,5 +14,16 @@ export default defineConfig({
       },
     },
   },
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    // rewrite assets to use relative path
+    {
+      name: 'assets-rewrite',
+      enforce: 'post',
+      apply: 'build',
+      transformIndexHtml(html) {
+        return html.replace(/"\/assets\//g, '"../assets/')
+      },
+    },
+  ],
 })
